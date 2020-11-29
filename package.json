@@ -1,0 +1,25 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build-js": "./node_modules/.bin/babel src/js --out-dir dist/js",
+    "build-ts": "babel --watch src --out-dir dist --extensions .ts,.tsx",
+    "tsc": "tsc",
+    "compile-sass": "node-sass -w src/sass -o dist/css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",
+    "node-sass": "^5.0.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}

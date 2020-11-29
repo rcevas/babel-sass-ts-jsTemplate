@@ -1,0 +1,17 @@
+article {
+    text-align: center;
+}
+
+#steve {
+    h3:nth-child(1) {
+        @include transform_rotate(-5deg);
+    }    
+}
+
+#bill h3 {
+    @include transform_rotate(-3deg);
+}
+
+article > p {
+    @include transform_rotate();
+}

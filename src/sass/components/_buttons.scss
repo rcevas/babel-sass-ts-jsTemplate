@@ -1,0 +1,27 @@
+%button-common {
+    cursor: poin + ter; //you can use operators to join strings
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+%button-wide {
+    width: (50/100)*100%; //you can use operators to calculate a value, in this case the result is 50%
+}
+
+.btn-success {
+    @extend %button-common;
+    @extend %button-wide;
+    background-color: green;
+}
+
+.btn-warning {
+    @extend %button-common;
+    background-color: orange;
+}
+
+.btn-error {
+    @extend %button-common;
+    background-color: red;
+}
